@@ -23,6 +23,3 @@ This project builds a Natural Language Query Agent to answer simple natural lang
 - `query_handler.py`: Processes queries and retrieves relevant information from indexes.
 - `response_generator.py`: Generates a conversational response based on retrieved information.
 
-
-# nl_query_agent
-# nl_query_agent
