@@ -1,4 +1,7 @@
-# main.py
+import os
+
+# Set environment variable to handle OpenMP runtime issue
+os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
 
 from src.data_preparation import preprocess_text, load_text
 from src.embeddings import generate_embeddings
@@ -44,5 +47,5 @@ def main():
     response = generate_response(lecture_results, lecture_notes.splitlines(), milestone_papers.splitlines())
     print("Response:", response)
 
-if __name__ == "__main__":
+if __name__ == "_main_":
     main()
